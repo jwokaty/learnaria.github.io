@@ -13,14 +13,14 @@
 <div id="top-bar">&nbsp; </div>
 <div class="page_wrapper">
 
-<div id="header">
+<div id="header" role="banner">
 	<div id="course_title_container" style="left:1em;">		
 	    <h1 id="section-title">Our Community Website</h1>
 	</div>
 </div>
 
 <div class="" style="z-index: auto; position: static; top: auto;" id="lrg_topnav">
-    <div style="width: 100%;" id="topnavlistcontainer" aria-label="main navigation tabs">
+    <div style="width: 100%;" id="topnavlistcontainer" aria-label="main navigation tabs" role="navigation">
         <a name="main-nav" id="main-nav"></a>
         <ul style="" id="topnavlist">
         <li><a href="index.html" accesskey="1" title="Back to Index Alt+1">Back to Index</a></li>
@@ -33,31 +33,31 @@
     </div> 
 </div>
 
-<div class="logoutbar">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
-<div class="crumbcontainer">
+<div class="logoutbar" role="search">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
+<div class="crumbcontainer" role="navigation">
 		<div id="breadcrumbs" tabindex="0" aria-label="breadcrumb links">&nbsp;</div>
 </div>
 <div id="contentwrapper">
     <div id="lrg_content">
-		<div id="leftcolumn">
+		<div id="leftcolumn" role="complementary" aria-label="Networking and People Online">
 		  <a id="menu"></a>
 		     <div id="side-menu" aria-label="left side menu" accesskey="0">
 		        <br/>
-                <h2 class="box"><span>Networking</span></h2>
-                <div class="box" id="menu_Networking">
-                    <ul class="social_side_menu">
-                        <li><a href="" class="fake">My Network</a></li>
-                        <li><a href="" class="fake">My Contacts</a></li>
-                        <li><a href="" class="fake">Network Profile</a></li>
-                        <li><a href="" class="fake">Gadgets</a></li>
-                        <li><a href="" class="fake">Network Groups</a></li>
-                        <li><a href="" class="fake">Settings</a></li>
+                <h2 class="box"><span id="networking">Networking</span></h2>
+                <div class="box" id="menu_Networking" region="networking" aria-labelledby="networking">
+                    <ul class="social_side_menu" role="menu">
+                        <li><a href="" class="fake" role="menuitem">My Network</a></li>
+                        <li><a href="" class="fake" role="menuitem">My Contacts</a></li>
+                        <li><a href="" class="fake" role="menuitem">Network Profile</a></li>
+                        <li><a href="" class="fake" role="menuitem">Gadgets</a></li>
+                        <li><a href="" class="fake" role="menuitem">Network Groups</a></li>
+                        <li><a href="" class="fake" role="menuitem">Settings</a></li>
                     </ul>
                     <div class="divider"></div>
                 </div>
 			<br/>
-                <h2 class="box"><span>People Online</span></h2>
-                <div class="box" id="menu_UsersOnline">
+                <h2 class="box"><span id="people_online">People Online</span></h2>
+                <div class="box" id="menu_UsersOnline" role="region" aria-labelledby="people_online">
                     <ul style="padding: 0px; list-style: none;">
                         <li style="padding: 3px 0px;" id="mylogin">No one logged in</li>
                     </ul>
@@ -67,15 +67,15 @@
 		</div>
     </div>	<!-- //end of the left column -->	
 
-	<div id="contentcolumn">
-	<div id="message"></div>
+	<div id="contentcolumn" role="main">
+	<div id="message" role="alert" aria-live="polite"></div>
 	<br style="clear:both;">
 	<a id="top"></a>
 
 <div class="profile">
-<h2>Join our community</h2>
+<h2 id="join-our-community">Join our community</h2>
 <div id="feedback">&nbsp;</div>
-<form id="join_form">
+<form id="join_form" aria-labelledby="join-our-community">
 <dl>
 <dt>
 <img src="images/required.gif" height="14" width="14" alt="Required Field" /> denotes required fields.<br />
@@ -215,7 +215,7 @@
 		<br style="width:100%;clear:both;" />
 
 	</div>
-<div id="advertising">
+<div id="advertising" role="complementary">
 <h2>Advertising</h2>
 <div>
 <img src="images/rum_cover.jpg" alt="" />
@@ -229,7 +229,7 @@
 <p><br><br>&nbsp;</p>
 </div>
 
-<div id="footer"> Copyright &copy; <a href="" class="fake">Chang School.</a>
+<div id="footer" role="contentinfo"> Copyright &copy; <a href="" class="fake">Chang School.</a>
 </div>
 
 </body>
